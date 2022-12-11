@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>{% block title %}Beatrice Shop{% endblock %}</title>
+       <link href="{% static 'css/main1.css' %}" rel="stylesheet">
+       <script src="https://kit.fontawesome.com/a8ba985590.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div id="header">
+                <a href="/" class="logo">
+                    <img src="{% static 'img/open-shop.jpg' %}">
+                </a>
+            </div>
+            <h1><span class="mo">Beat</span><span class="gi">oc</span><span class="be">rice</span><span class="tech">Shop</span></h1>
+            <div id="subheader">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{% url 'shop:mogibe_help' %}">Help</a></li>
+                    <li><a href="{% url 'shop:mogibe_about' %}">About</a></li>
+                </ul>
+                <i class="fas fa-cart-plus"></i>
+                <div class="cart">
+                    {% with total_items=cart|length %}
+                        {% if total_items > 0 %}
+                            <a href="{% url 'cart:cart_detail' %}"></a>
+                                {{ total_items }}
+                            </a>
+                        {% else %}
+                            0
+                        {% endif %}
+                    {% endwith %}
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <footer>
+            <div class="footer-content">
+                <div class="quick-links">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="{% url 'shop:mogibe_help' %}">Help</a></li>
+                        <li><a href="{% url 'shop:mogibe_about' %}">About</a></li>
+                        <li><a href="{% url 'cart:cart_detail' %}">cart</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h1>follow us on</h1>
+                    <ul>
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://twitter.com">Twitter</a></li>
+                        <li><a href="https://www.instagram.com">Instergram</a></li>
+                        <li><a href="https://www.linkedin.com">linked In</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h1>Contact us</h1>
+                    <ul>
+                        <li>Beatrice Kamau</li>
+                        <li>0712345678</li>
+                        <li>Embu, University of Embu</li>
+                        <li>beatricek@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="feedback">
+                    <form action="href='/'" method="post">
+                        <input class="email" type="email" placeholder="email" required>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Leave a comment here"></textarea>
+                        <input class="btn" type="button" value="submit">
+                    </form>
+                </div>
+            </div>
+            <h5>copyright&copy;2021-Giock.com</h5>
+        </footer>
+    </body>
+</html>

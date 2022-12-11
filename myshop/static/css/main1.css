@@ -1,0 +1,737 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    background-color: rgb(252, 212, 240);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px;
+}
+.nav-bar #header .logo img{
+    width: 50px;
+    border-radius: 50%;
+}
+.nav-bar h1 .mo{
+    color: fuchsia;
+}
+.nav-bar h1 .gi{
+    color: mediumseagreen;
+}
+.nav-bar h1 .be{
+    color: #ffff;
+}
+.nav-bar h1 .tech{
+    color: rgb(136, 136, 226);
+}
+#subheader{
+    display: flex;
+    align-items: center;
+}
+#subheader ul{
+    display: flex;
+}
+#subheader ul li{
+    list-style: none;
+    padding: 0px 10px;
+}
+#subheader ul li a{
+    text-decoration: none;
+    color: rgb(29, 141, 79);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.cart{
+    background-color: coral;
+    padding: 1px;
+    border-radius: 50%;
+    color: rgb(5, 4, 4);
+    border: groove;
+    width: fit-content;
+    font-size: x-small;
+    top: 0;
+}
+.cart a{
+    color: white;
+}
+/* styling the list.html*/
+#content{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 10px;
+    background-color: #fcfbfb;
+    margin-bottom: 20px;
+}
+#sidebar{
+    background-color: rgb(243, 216, 179);
+    flex-basis: 20%;
+    text-align: center;
+}
+#sidebar h3{
+    margin: 10px auto;
+    color: darkcyan;
+    font-size: x-large;
+}
+#sidebar li{
+    list-style: none;
+    margin: 40px;
+}
+#sidebar li a{
+    text-decoration: none;
+    color: #9a9a9a;
+}
+.product-list{
+    flex-basis: 75%;
+    display: grid;
+}
+.product-list h1{
+    margin: auto;
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.all-products-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 550px;
+    overflow: hidden;
+}
+.product-list .item{
+    display: grid;
+    text-align: center;
+    flex-basis: 24%;
+    margin-top: 5px;
+    padding: 3px 0px;
+}
+.product-list .item a img{
+    width: 200px;
+}
+.product-list .item a{
+    text-decoration: none;
+    color: #9a9a9a;
+    font-weight: bolder;
+    font-size: larger;
+}
+/* end of list.html styling*/
+/* styling product detail(product/detail.html)*/
+.product-detail-body .details-description h1 {
+    margin: 20px 0px;
+    color: silver;
+}
+.product-detail-body .details-description p{
+    margin: 10px 0px;
+    color: slategray;
+}
+.product-detail-body .details-description form{
+    margin: 2px 0px;
+}
+.product-detail-body .details-description form input{
+    background-color: rgb(255, 67, 67);
+    color: whitesmoke;
+    padding: 2px 5px;
+    font-style: italic;
+}
+/*End*/
+/* Styling Shoping cart*/
+.cart2 thead{
+    background-color: rgb(255, 67, 67);
+}
+.cart2 thead tr th{
+    padding: 5px 10px;
+}
+.cart2 thead tr td form{
+    margin: auto;
+}
+.cart-body-content{
+    display: grid;
+    margin: auto;
+    height: 600px;
+    overflow: auto;
+}
+.cart-body-content h1{
+    text-align: center;
+    margin: 20px auto;
+}
+.cart-body-content .cart2 thead tr th{
+    padding: 2px 30px;
+}
+.cart-body-content .cart2 tbody tr td{
+    text-align: center;
+}
+tbody{
+    margin-top: 10px;
+}
+tbody input{
+    background-color: rgb(255, 67, 67);
+    color: ghostwhite;
+    padding: 0px 5px;
+}
+tbody tr td a img{
+    width: 200px;
+    height: auto;
+}
+tbody tr td form input:hover{
+    cursor: pointer;
+}
+.total td{
+    font-size: larger;
+    font-weight: bolder;
+    color: slategrey;
+}
+.text-right{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.text-right a{
+    text-decoration: none;
+    color: rgb(82, 79, 232);
+    font-size: larger;
+    background-color: rgb(240, 194, 95);
+    padding: 1px 5px;
+    border: 2px black;
+    max-height: 25px;
+    border-radius: 20px;
+}
+.Your-Cart-Is{
+    margin: 50px auto;
+}
+.Your-Cart-Is .your-cart-de p{
+    margin: 40px auto;
+    text-align: center;
+    font-size: 1.5em;
+    color: #9a9a9a;
+    max-width: 600px;
+}
+.Your-Cart-Is .your-cart-de{
+    display: grid;
+    margin: 20px auto;
+}
+.Your-Cart-Is .your-cart-de h1{
+    margin: 20px auto;
+    color: red;
+    text-align: center;
+}
+.Your-Cart-Is .buttonlight{
+    text-decoration: none;
+    background-color: rgb(240, 194, 95);
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 40px 250px;
+}
+/*end of styling cart detail*/
+/* styling order*/
+.oder{
+    display: grid;
+    margin: auto;
+}
+.oder h1{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2.5em;
+}
+.oder .order-details{
+    display: flex;
+    align-items: center;
+}
+.oder .order-details .order-info h3{
+    margin: 20px auto;
+    text-align: center;
+    font-size: xx-large;
+}
+.oder .order-details .order-info{
+    text-align: center;
+    color: #909090;
+    margin: auto 40px;
+}
+.oder .order-details .order-info ul li{
+    font-size: x-large;
+    list-style: none;
+}
+.oder .order-details .order-info p{
+    font-size: larger;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: black;
+}
+.oder .order-details form{
+    border: 2px black;
+    margin: auto 40px;
+}
+.oder .order-details a{
+    text-decoration: none;
+    background-color: rgb(240, 194, 95);
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: auto 40px;
+}
+.oder .order-details form p{
+    text-align: center;
+    margin: 20px 0px;
+    justify-content: space-between;
+}
+.oder .order-details form p input{
+    padding: 1px 5px;
+    outline: none;
+}
+.order-created-content{
+    display: grid;
+    margin: 50px auto;
+}
+.order-created-content h1{
+    color: greenyellow;
+}
+.order-created-content p{
+    max-width: 400px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 100px auto;
+    text-align: center;
+}
+.order-created-content p span{
+    font-style: italic;
+    margin-top: 30px;
+}
+footer{
+    background-color: #9a9a9a;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.quick-links{
+    margin-top: 40px;
+}
+.quick-links ul li{
+    list-style: none;
+    margin-top: 5px;
+}
+.quick-links ul li a{
+    text-decoration: none;
+    color: black;
+}
+.social-media{
+    text-align: center;
+}
+.social-media h1{
+    margin: auto;
+}
+.social-media ul li{
+    list-style: none;
+    margin-top: 5px;
+}
+.social-media ul li a{
+    text-decoration: none;
+    color: black;
+}
+.contacts{
+    text-align: center;
+}
+.contacts h1{
+    margin: auto;
+}
+.contacts ul li{
+    list-style: none;
+    margin-top: 5px;
+}
+.contacts ul li a{
+    text-decoration: none;
+    color: black;
+}
+.feedback form{
+    display: grid;
+}
+.feedback form input{
+    margin: 10px auto;
+}
+.feedback form textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid black;
+    background: transparent;
+    resize: none;
+    color: #ffff;
+    height: 25px;
+}
+.feedback form .email{
+    outline: none;
+    width: 200px;
+    height: 20px;
+    padding: 1px 5px;
+}
+.feedback form .btn{
+    margin-top: 15px;
+    padding: 2px 5px;
+    background: coral;
+}
+footer h5{
+    text-align: center;
+    padding: 10px 0px;
+    color: whitesmoke;
+}
+/* styling details.html */
+.product-detail h2 {
+    text-align: center;
+    margin: 40px auto;
+}
+.product-detail h2 a{
+    text-decoration: none;
+    color: hotpink;
+    font-size: larger;
+}
+.product-detail .product-desc{
+    display: flex;
+    align-items: center;
+}
+.product-detail .product-desc img{
+    height: 400px;
+    width: 600px;
+    margin: 30px 100px;
+}
+.product-detail .product-desc .details-description{
+    margin: auto 100px;
+    text-align: center;
+}
+
+/*styling help*/
+.body-Contents{
+    display: flex;
+    justify-content: space-between;
+}
+.body-Contents .col-2 .the-container h1{
+    margin: 10px auto;
+    text-align: center;
+    font-size: 2em;
+}
+details{
+    width: 600px;
+    height: fit-content;
+    margin: 50px auto;
+    padding: 0px 20px;
+}
+details  p{
+    max-width: 400px;
+    max-height: fit-content;
+    font-size: large;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+details p a{
+    text-align: center;
+    padding: 5px 0px;
+    cursor: pointer;
+
+}
+.body-Contents .col-2 p a{
+    color: blue;
+    text-decoration: none;
+}
+/*styling about*/
+.small-container{
+
+    background: linear-gradient( rgb(250, 250, 236), rgb(253, 249, 253), rgb(252, 250, 245));
+}
+.small-container h1{
+    margin: auto;
+    color: rgb(77, 76, 74);
+    font-size: 2em;
+    text-align: center;
+    color: red;
+}
+.body-contents{
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding: 50px;
+}
+.body-contents .mogibe-logo img{
+    width: 400px;
+    border-radius: 50%;
+}
+.body-contents .description{
+    margin-left: 50px;
+    line-height: 50px;
+    font-size: 1.5em;
+    text-align: center;
+}
+.mgbhstry{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.mgbhstry p{
+    font-size: 1.8em;
+    color: #909090;
+}
+.designers{
+    display: grid;
+}
+.designers h1{
+    color: darkgoldenrod;
+    text-decoration: none;
+    margin: 20px auto;
+}
+.row{
+    width: 60%;
+    display: flex;
+    margin : auto;
+    margin-left: 35%;
+}
+.col-3 img{
+    width: 100px;
+    height: 100px;
+    transform: translateY(-50px);
+    position: relative;
+    border-radius: 50%;
+}
+.col-3{
+    border: 2px solid #000;
+    width: 50%;
+    height: fit-content;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    margin: 60px 20px;
+    flex-basis: 35%;
+}
+.col-3 hr{
+    width: 50%;
+    margin-left: 50px;
+    margin: 5px auto;
+    height: 2px;
+    background-color: rgb(226, 60, 60);
+}
+.col-3 h3{
+    margin-top: 5px;
+}
+.col-3 .desingner-profile{
+    margin-top: 15px;
+}
+.col-3 .desingner-profile .social-media{
+    margin-top: 20px;
+    background: blue;
+    color: #fff;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 500px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+        .nav-bar{
+        background-color: rgb(252, 212, 240);
+        display: grid;
+        justify-content: space-between;
+    }
+        .nav-bar #header .logo img{
+        width: 50px;
+        border-radius: 50%;
+        margin: 5px 150px;
+    }
+     .nav-bar h1{
+         margin: auto;
+     }
+    #subheader{
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+    #subheader ul{
+        display: flex;
+    }
+    #subheader ul li{
+        list-style: none;
+        padding: 0px 20px;
+    }
+    .footer-content{
+    display: grid;
+    justify-content: space-between;
+    padding: 10px;
+    }
+    .quick-links{
+    margin: 10px auto;
+    }
+    .quick-links ul li{
+        list-style: none;
+        margin-top: 5px;
+    }
+    .quick-links ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: small;
+    }
+    .social-media{
+        text-align: center;
+        margin: auto;
+    }
+    .contacts{
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .feedback form{
+        display: grid;
+        margin: 5px 30px;
+    }
+    footer h5{
+        text-align: center;
+        padding: 10px 0px;
+        color: whitesmoke;
+    }
+    #content{
+    display: grid;
+    justify-content: space-between;
+    margin: 2px 0px;
+    background-color: #fcfbfb;
+    margin-bottom: 20px;
+    }
+    #sidebar ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #sidebar li{
+        list-style: none;
+        margin: 5px 10px;
+    }
+    .all-products-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: fit-content;
+        overflow: hidden;
+    }
+    .product-list .item{
+        display: grid;
+        text-align: center;
+        flex-basis: 23%;
+        margin-top: 5px;
+        padding: 3px 0px;
+    }
+    .product-list .item a img{
+        width: 100px;
+    }
+    .product-detail-body .product-desc img{
+        width: 150px;
+        height: 150px;
+    }
+    .product-detail-body .product-desc{
+        display: grid;
+    }
+    .cart-body-content .cart2 thead tr th{
+        padding: 2px 1px;
+        font-size: 0.5em;
+    }
+    tbody tr td a img{
+        width: 30px;
+        height: auto;
+    }
+    tbody input{
+        font-size: 0.5em;
+    }
+    .Your-Cart-Is .buttonlight{
+        margin: 40px 100px;
+    }
+    tbody tr num{
+        font-size: 0.3em;
+    }
+    tbody tr .nm{
+        font-size: 0.2em;
+    }
+    .total td{
+        font-size: small;
+    }
+    .oder .order-details{
+        display: grid;
+        align-items: center;
+    }
+    .oder .order-details form{
+        border: 2px black;
+        margin: auto;
+    }
+    .oder .order-details a{
+        width: 100px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .order-created-content h1{
+        color: greenyellow;
+        margin: auto 20px;
+        max-width: 300px;
+    }
+    .order-created-content p{
+        max-width: 300px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 100px 10px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .order-created-content p span{
+        font-style: italic;
+        margin-top: 30px;
+    }
+    .body-contents{
+        display: grid;
+        margin: auto;
+    }
+    .body-contents .description{
+        margin: auto;
+        max-width: 400px;
+        text-align: center;
+        font-size: 0.9em;
+    }
+    .row{
+        display: grid;
+        margin: auto;
+        width: 400px;
+        display: flex;
+        margin : auto;
+        margin-left: 20%;
+    }
+    .mgbhstry{
+        width: 300px;
+        margin: auto;
+        text-align: centre;
+        font-size: 0.5em;
+    }
+    .small-container{
+        margin: auto;
+    }
+    .body-contents .mogibe-logo img{
+        width: 200px;
+        border-radius: 50%;
+        margin: auto;
+    }
+    .body-Contents .col-2 .the-container{
+        margin: auto;
+    }
+    .body-Contents .col-2 .the-container h1{
+        margin: 10px auto;
+        text-align: center;
+        font-size: 1em;
+        max-width: 200px;
+    }
+    .quiz-box{
+        width: 300px;
+        height: 35px;
+        overflow: hidden;
+        margin: 50px auto;
+        background: mediumturquoise;
+        padding: 0px 10px;
+        position: relative;
+    }
+    .quiz-box h2 p{
+        max-width: 300px;
+        margin: auto;
+    }
+    .quiz-box h2{
+        width: 280px;
+    }
+}
